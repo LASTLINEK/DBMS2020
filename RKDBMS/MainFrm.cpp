@@ -24,6 +24,18 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWndEx)
 	ON_WM_CREATE()
 	ON_COMMAND(ID_VIEW_CUSTOMIZE, &CMainFrame::OnViewCustomize)
 	ON_COMMAND(ID_SYSTEM_EXIT, OnSystemExit)
+	ON_COMMAND(ID_DATABASE_CREATEDATABASE, OnCreateDatabase)
+	ON_COMMAND(ID_DATABASE_OPENDATABASE, OnOpenDatabase)
+	ON_COMMAND(ID_TABLE_CREATETABLE, OnCreateTable)
+	ON_COMMAND(ID_TABLE_ALTERTABLE, OnAlterTable)
+	ON_COMMAND(ID_TABLE_DROPTABLE, OnDropTable)
+	ON_COMMAND(ID_FIELD_ADDFIELD, OnAddField)
+	ON_COMMAND(ID_FIELD_MODIFYFIELD, OnModifyField)
+	ON_COMMAND(ID_FIELD_DROPFIELD, OnDropField)
+	ON_COMMAND(ID_RECORD_INSERTRECORD, OnInsertRecord)
+	ON_COMMAND(ID_RECORD_UPDATERECORD, OnUpdateRecord)
+	ON_COMMAND(ID_RECORD_DELETERECORD, OnDeleteRecord)
+	ON_COMMAND(ID_RECORD_SELECTRECORD, OnSelectRecord)
 	ON_REGISTERED_MESSAGE(AFX_WM_CREATETOOLBAR, &CMainFrame::OnToolbarCreateNew)
 	ON_COMMAND_RANGE(ID_VIEW_APPLOOK_WIN_2000, ID_VIEW_APPLOOK_WINDOWS_7, &CMainFrame::OnApplicationLook)
 	ON_UPDATE_COMMAND_UI_RANGE(ID_VIEW_APPLOOK_WIN_2000, ID_VIEW_APPLOOK_WINDOWS_7, &CMainFrame::OnUpdateApplicationLook)
@@ -173,7 +185,18 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	lstBasicCommands.AddTail(ID_SORTING_SORTBYACCESS);
 	lstBasicCommands.AddTail(ID_SORTING_GROUPBYTYPE);
 	lstBasicCommands.AddTail(ID_SYSTEM_EXIT);
-
+	lstBasicCommands.AddTail(ID_DATABASE_CREATEDATABASE);
+	lstBasicCommands.AddTail(ID_DATABASE_OPENDATABASE);
+	lstBasicCommands.AddTail(ID_TABLE_CREATETABLE);
+	lstBasicCommands.AddTail(ID_TABLE_ALTERTABLE);
+	lstBasicCommands.AddTail(ID_TABLE_DROPTABLE);
+	lstBasicCommands.AddTail(ID_FIELD_ADDFIELD);
+	lstBasicCommands.AddTail(ID_FIELD_MODIFYFIELD);
+	lstBasicCommands.AddTail(ID_FIELD_DROPFIELD);
+	lstBasicCommands.AddTail(ID_RECORD_INSERTRECORD);
+	lstBasicCommands.AddTail(ID_RECORD_UPDATERECORD);
+	lstBasicCommands.AddTail(ID_RECORD_SELECTRECORD);
+	lstBasicCommands.AddTail(ID_RECORD_DELETERECORD);
 	CMFCToolBar::SetBasicCommands(lstBasicCommands);
 
 	return 0;
@@ -413,4 +436,72 @@ void CMainFrame::OnSystemExit()
 {
 	// TODO: 在此处添加命令处理程序代码
 	exit(0);
+}
+
+void CMainFrame::OnCreateDatabase()
+{
+	// TODO: 在此处添加命令处理程序代码
+
+}
+
+void CMainFrame::OnOpenDatabase()
+{
+	// TODO: 在此处添加命令处理程序代码
+
+}
+
+void CMainFrame::OnCreateTable()
+{
+	// TODO: 在此处添加命令处理程序代码
+
+}
+void CMainFrame::OnAlterTable()
+{
+	// TODO: 在此处添加命令处理程序代码
+
+}
+
+void CMainFrame::OnDropTable()
+{
+	// TODO: 在此处添加命令处理程序代码
+
+}
+
+void CMainFrame::OnAddField()
+{
+	// TODO: 在此处添加命令处理程序代码
+
+}
+
+void CMainFrame::OnModifyField()
+{
+	// TODO: 在此处添加命令处理程序代码
+
+}
+
+void CMainFrame::OnDropField()
+{
+	// TODO: 在此处添加命令处理程序代码
+
+}
+
+void CMainFrame::OnInsertRecord()
+{
+	// TODO: 在此处添加命令处理程序代码
+
+}
+void CMainFrame::OnUpdateRecord()
+{
+	// TODO: 在此处添加命令处理程序代码
+
+}
+void CMainFrame::OnDeleteRecord()
+{
+	// TODO: 在此处添加命令处理程序代码
+
+}
+void CMainFrame::OnSelectRecord()
+{
+	// TODO: 在此处添加命令处理程序代码
+
 }

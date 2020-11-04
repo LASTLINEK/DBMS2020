@@ -52,6 +52,18 @@ protected:
 	afx_msg void OnApplicationLook(UINT id);
 	afx_msg void OnUpdateApplicationLook(CCmdUI* pCmdUI);
 	afx_msg void OnSystemExit();
+	afx_msg void OnCreateDatabase();
+	afx_msg void OnOpenDatabase();
+	afx_msg void OnCreateTable();
+	afx_msg void OnAlterTable();
+	afx_msg void OnDropTable();
+	afx_msg void OnAddField();
+	afx_msg void OnModifyField();
+	afx_msg void OnDropField();
+	afx_msg void OnInsertRecord();
+	afx_msg void OnUpdateRecord();
+	afx_msg void OnSelectRecord();
+	afx_msg void OnDeleteRecord();
 	afx_msg void OnSettingChange(UINT uFlags, LPCTSTR lpszSection);
 	DECLARE_MESSAGE_MAP()
 

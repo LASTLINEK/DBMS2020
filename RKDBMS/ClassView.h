@@ -42,7 +42,7 @@ protected:
 	afx_msg void OnClassAddMemberVariable();
 	afx_msg void OnClassDefinition();
 	afx_msg void OnClassProperties();
-	afx_msg void OnCreateDatabase();
+
 	afx_msg void OnNewFolder();
 	afx_msg void OnPaint();
 	afx_msg void OnSetFocus(CWnd* pOldWnd);
