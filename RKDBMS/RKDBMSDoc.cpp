@@ -17,6 +17,7 @@
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
+#include "CDBLogic.h"
 
 // CRKDBMSDoc
 
@@ -45,6 +46,7 @@ BOOL CRKDBMSDoc::OnNewDocument()
 
 	// TODO: 在此添加重新初始化代码
 	// (SDI 文档将重用该文档)
+	CDBLogic::CreateDatabase(m_dbEntity);
 
 	return TRUE;
 }

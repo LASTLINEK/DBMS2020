@@ -4,6 +4,8 @@
 
 
 #pragma once
+#include "CDBEntity.h"
+#include "CTableEntity.h"
 
 
 class CRKDBMSDoc : public CDocument
@@ -45,4 +47,14 @@ protected:
 	// 用于为搜索处理程序设置搜索内容的 Helper 函数
 	void SetSearchContent(const CString& value);
 #endif // SHARED_HANDLERS
+
+
+private:
+	CDBEntity m_dbEntity;
+	CTableEntity* TABLEARR;
+
+public:
+	bool CreateTable();
+
+
 };

@@ -105,6 +105,18 @@
     <ClInclude Include="DataType.h">
       <Filter>头文件\Util</Filter>
     </ClInclude>
+    <ClInclude Include="CDBLogic.h">
+      <Filter>头文件\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="CDBDao.h">
+      <Filter>头文件\Dao</Filter>
+    </ClInclude>
+    <ClInclude Include="CFileDao.h">
+      <Filter>头文件\Dao</Filter>
+    </ClInclude>
+    <ClInclude Include="CTableLogic.h">
+      <Filter>头文件\Logic</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClassView.cpp">
@@ -151,6 +163,18 @@
     </ClCompile>
     <ClCompile Include="DataType.cpp">
       <Filter>源文件\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="CDBLogic.cpp">
+      <Filter>源文件\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="CDBDao.cpp">
+      <Filter>源文件\Dao</Filter>
+    </ClCompile>
+    <ClCompile Include="CFileDao.cpp">
+      <Filter>源文件\Dao</Filter>
+    </ClCompile>
+    <ClCompile Include="CTableLogic.cpp">
+      <Filter>源文件\Logic</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

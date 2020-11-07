@@ -183,11 +183,15 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CDBDao.h" />
     <ClInclude Include="CDBEntity.h" />
+    <ClInclude Include="CDBLogic.h" />
     <ClInclude Include="CFieldEntity.h" />
+    <ClInclude Include="CFileDao.h" />
     <ClInclude Include="ClassView.h" />
     <ClInclude Include="CRecordEntity.h" />
     <ClInclude Include="CTableEntity.h" />
+    <ClInclude Include="CTableLogic.h" />
     <ClInclude Include="DataType.h" />
     <ClInclude Include="FileView.h" />
     <ClInclude Include="framework.h" />
@@ -203,11 +207,15 @@
     <ClInclude Include="ViewTree.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CDBDao.cpp" />
     <ClCompile Include="CDBEntity.cpp" />
+    <ClCompile Include="CDBLogic.cpp" />
     <ClCompile Include="CFieldEntity.cpp" />
+    <ClCompile Include="CFileDao.cpp" />
     <ClCompile Include="ClassView.cpp" />
     <ClCompile Include="CRecordEntity.cpp" />
     <ClCompile Include="CTableEntity.cpp" />
+    <ClCompile Include="CTableLogic.cpp" />
     <ClCompile Include="DataType.cpp" />
     <ClCompile Include="FileView.cpp" />
     <ClCompile Include="MainFrm.cpp" />
