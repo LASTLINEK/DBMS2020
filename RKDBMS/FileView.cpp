@@ -92,33 +92,32 @@ void CFileView::OnSize(UINT nType, int cx, int cy)
 
 void CFileView::FillFileView()
 {
-	HTREEITEM hRoot = m_wndFileView.InsertItem(_T("FakeApp 文件"), 0, 0);
+	HTREEITEM hRoot = m_wndFileView.InsertItem(_T("数据库1"), 0, 0);
 	m_wndFileView.SetItemState(hRoot, TVIS_BOLD, TVIS_BOLD);
+	m_wndFileView.InsertItem(_T("数据库1.tb"), 1, 1, hRoot);
 
-	HTREEITEM hSrc = m_wndFileView.InsertItem(_T("FakeApp 源文件"), 0, 0, hRoot);
+	HTREEITEM hSrc = m_wndFileView.InsertItem(_T("表1"), 0, 0, hRoot);
 
-	m_wndFileView.InsertItem(_T("FakeApp.cpp"), 1, 1, hSrc);
-	m_wndFileView.InsertItem(_T("FakeApp.rc"), 1, 1, hSrc);
-	m_wndFileView.InsertItem(_T("FakeAppDoc.cpp"), 1, 1, hSrc);
-	m_wndFileView.InsertItem(_T("FakeAppView.cpp"), 1, 1, hSrc);
-	m_wndFileView.InsertItem(_T("MainFrm.cpp"), 1, 1, hSrc);
-	m_wndFileView.InsertItem(_T("pch.cpp"), 1, 1, hSrc);
+	m_wndFileView.InsertItem(_T("表1.tdf"), 1, 1, hSrc);
+	m_wndFileView.InsertItem(_T("表1.trd"), 1, 1, hSrc);
+	m_wndFileView.InsertItem(_T("表1.tic"), 1, 1, hSrc);
+	m_wndFileView.InsertItem(_T("表1.tid"), 1, 1, hSrc);
 
-	HTREEITEM hInc = m_wndFileView.InsertItem(_T("FakeApp 头文件"), 0, 0, hRoot);
 
-	m_wndFileView.InsertItem(_T("FakeApp.h"), 2, 2, hInc);
-	m_wndFileView.InsertItem(_T("FakeAppDoc.h"), 2, 2, hInc);
-	m_wndFileView.InsertItem(_T("FakeAppView.h"), 2, 2, hInc);
-	m_wndFileView.InsertItem(_T("Resource.h"), 2, 2, hInc);
-	m_wndFileView.InsertItem(_T("MainFrm.h"), 2, 2, hInc);
-	m_wndFileView.InsertItem(_T("pch.h"), 2, 2, hInc);
+	HTREEITEM hInc = m_wndFileView.InsertItem(_T("表2"), 0, 0, hRoot);
 
-	HTREEITEM hRes = m_wndFileView.InsertItem(_T("FakeApp 资源文件"), 0, 0, hRoot);
+	m_wndFileView.InsertItem(_T("表1.tdf"), 2, 2, hInc);
+	m_wndFileView.InsertItem(_T("表1.trd"), 2, 2, hInc);
+	m_wndFileView.InsertItem(_T("表1.tic"), 2, 2, hInc);
+	m_wndFileView.InsertItem(_T("表1.tid"), 2, 2, hInc);
+\
 
-	m_wndFileView.InsertItem(_T("FakeApp.ico"), 2, 2, hRes);
-	m_wndFileView.InsertItem(_T("FakeApp.rc2"), 2, 2, hRes);
-	m_wndFileView.InsertItem(_T("FakeAppDoc.ico"), 2, 2, hRes);
-	m_wndFileView.InsertItem(_T("FakeToolbar.bmp"), 2, 2, hRes);
+	HTREEITEM hRes = m_wndFileView.InsertItem(_T("表3"), 0, 0, hRoot);
+
+	m_wndFileView.InsertItem(_T("表1.tdf"), 2, 2, hRes);
+	m_wndFileView.InsertItem(_T("表1.trd"), 2, 2, hRes);
+	m_wndFileView.InsertItem(_T("表1.tic"), 2, 2, hRes);
+	m_wndFileView.InsertItem(_T("表1.tid"), 2, 2, hRes);
 
 	m_wndFileView.Expand(hRoot, TVE_EXPAND);
 	m_wndFileView.Expand(hSrc, TVE_EXPAND);
