@@ -183,7 +183,12 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CDBEntity.h" />
+    <ClInclude Include="CFieldEntity.h" />
     <ClInclude Include="ClassView.h" />
+    <ClInclude Include="CRecordEntity.h" />
+    <ClInclude Include="CTableEntity.h" />
+    <ClInclude Include="DataType.h" />
     <ClInclude Include="FileView.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="MainFrm.h" />
@@ -198,7 +203,12 @@
     <ClInclude Include="ViewTree.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CDBEntity.cpp" />
+    <ClCompile Include="CFieldEntity.cpp" />
     <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="CRecordEntity.cpp" />
+    <ClCompile Include="CTableEntity.cpp" />
+    <ClCompile Include="DataType.cpp" />
     <ClCompile Include="FileView.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="OutputWnd.cpp" />
