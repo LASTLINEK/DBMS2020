@@ -12,8 +12,5 @@ private:
 
 public:
 	//CDBEntity(DatabaseBlock& db);
-	CDBEntity(CString strName);
-	CDBEntity();
-	~CDBEntity();
 };
 
