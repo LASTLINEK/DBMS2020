@@ -3,10 +3,10 @@
 //
 
 #pragma once
-#include "FileView.h"
-#include "ClassView.h"
-#include "OutputWnd.h"
-#include "PropertiesWnd.h"
+
+
+#include "MyListView1.h"
+#include "MyTreeView.h"
 
 class CMainFrame : public CFrameWndEx
 {
@@ -36,13 +36,9 @@ public:
 
 protected:  // 控件条嵌入成员
 	CMFCMenuBar       m_wndMenuBar;
-	CMFCToolBar       m_wndToolBar;
 	CMFCStatusBar     m_wndStatusBar;
 	CMFCToolBarImages m_UserImages;
-	CFileView         m_wndFileView;
-	CClassView        m_wndClassView;
-	COutputWnd        m_wndOutput;
-	CPropertiesWnd    m_wndProperties;
+
 
 // 生成的消息映射函数
 protected:
@@ -69,6 +65,11 @@ protected:
 
 	BOOL CreateDockingWindows();
 	void SetDockingWindowIcons(BOOL bHiColorIcons);
+private:
+	CSplitterWnd	m_wndSplitter;
+	CMyTreeView* m_pMyTreeView;
+	CMyListView1* m_pCMyListView1;
+	virtual BOOL OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext);
 };
 
 

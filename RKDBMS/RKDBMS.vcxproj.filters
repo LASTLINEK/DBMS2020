@@ -51,25 +51,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClassView.h">
-      <Filter>头文件\View</Filter>
-    </ClInclude>
-    <ClInclude Include="FileView.h">
-      <Filter>头文件\View</Filter>
-    </ClInclude>
     <ClInclude Include="framework.h">
       <Filter>头文件\View</Filter>
     </ClInclude>
     <ClInclude Include="MainFrm.h">
       <Filter>头文件\View</Filter>
     </ClInclude>
-    <ClInclude Include="OutputWnd.h">
-      <Filter>头文件\View</Filter>
-    </ClInclude>
     <ClInclude Include="pch.h">
-      <Filter>头文件\View</Filter>
-    </ClInclude>
-    <ClInclude Include="PropertiesWnd.h">
       <Filter>头文件\View</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
@@ -117,24 +105,18 @@
     <ClInclude Include="CTableLogic.h">
       <Filter>头文件\Logic</Filter>
     </ClInclude>
+    <ClInclude Include="MyTreeView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="MyListView1.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ClassView.cpp">
-      <Filter>源文件\View</Filter>
-    </ClCompile>
-    <ClCompile Include="FileView.cpp">
-      <Filter>源文件\View</Filter>
-    </ClCompile>
     <ClCompile Include="MainFrm.cpp">
       <Filter>源文件\View</Filter>
     </ClCompile>
-    <ClCompile Include="OutputWnd.cpp">
-      <Filter>源文件\View</Filter>
-    </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>源文件\View</Filter>
-    </ClCompile>
-    <ClCompile Include="PropertiesWnd.cpp">
       <Filter>源文件\View</Filter>
     </ClCompile>
     <ClCompile Include="RKDBMS.cpp">
@@ -175,6 +157,12 @@
     </ClCompile>
     <ClCompile Include="CTableLogic.cpp">
       <Filter>源文件\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTreeView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="MyListView1.cpp">
+      <Filter>源文件\View</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
